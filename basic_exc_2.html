@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+            
+            #Kaytra{
+                color: blue;
+                box-sizing: border-box;
+                padding: 3px orange;
+                border: 30px dotted green;
+                transition-property: border, color;
+            }
+
+
+            #Unlogix{
+                color: blue;
+                background-color: white;
+                display: flex;
+                box-sizing: border-box;
+                border: 30px dotted green;
+                transition-property: border,color var(--Kaytra);
+            }
+
+            #Schirin{
+                box-sizing: border-box;
+                border: 30px dotted green;
+                display: flex;
+                transition-property: border, color var(--Kaytra);
+            }
+
+
+            #Kaytra:hover{
+                color: rgb(128, 0, 0);
+                background-color: aqua;
+                border: 30px dotted blue;
+                transition-duration: 500ms;
+                transition-timing-function: ease;
+                transform: rotate(360deg);
+            }
+
+            #Unlogix:hover{
+                color: red;
+                background-color: black;
+                border: 30px dotted rgb(128, 0, 0);
+                transition-duration: 500ms;
+                transition-timing-function: ease-out;
+                transform: rotate(360deg);
+            }
+
+            #Schirin:hover{
+                background-color: yellow;
+                border: 30px dotted purple;
+                transition-duration: 500ms;
+                transition-timing-function: ease-in-out;
+                transform: rotate(360deg);
+            }
+
+            #navbar{
+                display: flex;
+                justify-content: center;
+            }
+    </style>
+</head>
+<body>
+    <nav id="navbar">
+        <a href="https://www.youtube.com/watch?v=-5EQIiabJvk" id="Kaytra">Kaytranada Sound</a>
+
+        <a href="https://search.brave.com/images?q=unlogix%20alone" id="Unlogix">Unlogix' art</a>
+
+        <a href="https://soundcloud.com/scheesch" id="Schirin">Schirin Jamie's SoundCloud</a>
+    </nav>
+</body>
+</html>
